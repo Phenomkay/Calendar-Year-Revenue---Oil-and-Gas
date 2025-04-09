@@ -1,25 +1,25 @@
 First, we observed that certain columns in our dataset had NULL values, which were expected based on the nature of the data (e.g., onshore revenue fields being empty for offshore records and vice versa). To make the dataset cleaner and more interpretable, we replaced all these NULL values with "N/A" using the COALESCE function. This ensured that the data remains clear without any ambiguous blanks.
 We applied this update to several columns, including:
 
-Calendar Year
+ - Calendar Year
 
-Land Class
+ - Land Class
 
-Land Category
+ - Land Category
 
-State
+ - State
 
-County
+ - County
 
-Offshore Region
+ - Offshore Region
 
-Revenue Type
+ - Revenue Type
 
-Mineral Lease Type
+ - Mineral Lease Type
 
-Commodity
+ - Commodity
 
-Product
+ - Product
 
 This preprocessing step improves readability and clarity for analysis, as it provides consistent placeholders in the dataset.
 
