@@ -72,3 +72,145 @@ Here, we examined the contribution of revenue by state to identify the key geogr
  - A foundation for understanding regional patterns and opportunities.
 
 This analysis provides stakeholders with a strategic view of state-level contributions to revenue, facilitating more informed geographic or policy decisions. Once the results are available, we can further interpret and present actionable insights.
+
+| State          | Total Revenue      | Revenue Percentage |
+|----------------|--------------------|---------------------|
+| N/A            | 158018986575.18   | 63.21              |
+| New Mexico     | 35175637979.2     | 14.07              |
+| Wyoming        | 34667303719.14    | 13.87              |
+| Colorado       | 5712043519.93     | 2.28               |
+| Utah           | 4735421749.09     | 1.89               |
+| North Dakota   | 4175200562.05     | 1.67               |
+| California     | 2422162439.95     | 0.97               |
+| Montana        | 1505688789.18     | 0.6                |
+| Alaska         | 917168821.82      | 0.37               |
+| Texas          | 536596192.43      | 0.21               |
+| Louisiana      | 472746690.9       | 0.19               |
+| Nevada         | 323519294.43      | 0.13               |
+| Oklahoma       | 316567090.65      | 0.13               |
+| Missouri       | 197269792.03      | 0.08               |
+| Arkansas       | 193370792.66      | 0.08               |
+| Idaho          | 170641195.91      | 0.07               |
+| Kansas         | 107421051.55      | 0.04               |
+| Alabama        | 80101063.5        | 0.03               |
+| Mississippi    | 76270014.14       | 0.03               |
+| South Dakota   | 35071752.23       | 0.01               |
+| Michigan       | 31020736.94       | 0.01               |
+| Ohio           | 28774267.01       | 0.01               |
+| Kentucky       | 18619342.97       | 0.01               |
+| West Virginia  | 17963191.68       | 0.01               |
+| Washington     | 16171509.05       | 0.01               |
+| Florida        | 8994664.81        | 0.00               |
+| Oregon         | 8988725.29        | 0.00               |
+| Nebraska       | 6589150.4         | 0.00               |
+| Illinois       | 4396273.75        | 0.00               |
+| Virginia       | 4244343.74        | 0.00               |
+| Pennsylvania   | 2615249.06        | 0.00               |
+| Minnesota      | 2463711.98        | 0.00               |
+| Arizona        | 2082335.38        | 0.00               |
+| Indiana        | 494475.53         | 0.00               |
+| Maryland       | 320934.13         | 0.00               |
+| New York       | 237281.9          | 0.00               |
+| South Carolina | 60203.72          | 0.00               |
+| North Carolina | 5372.00           | 0.00               |
+| Wisconsin      | 2000.00           | 0.00               |
+| Tennessee      | 660.00            | 0.00               |
+| Georgia        | 218.00            | 0.00               |
+
+
+### Key Insights
+1. **Revenue Concentration**:
+A significant portion of the total revenue 63.21% comes from records categorized as N/A. This suggests a large contribution from data that are not associated with a specific state. This represents offshore revenues, which warrants further investigation to understand its importance.
+
+The top three contributing states (New Mexico, Wyoming, and Colorado) collectively account for 30.22% of the revenue, showcasing the dominance of these regions in oil and gas revenue generation.
+
+2. **Top Performing States**:
+New Mexico leads with 14.07%, followed closely by Wyoming with 13.87%, and Colorado at 2.28%. These states are critical drivers of total revenue and likely hold strategic importance for the industry.
+
+3. **Low Revenue Contributors**:
+Several states, such as Georgia, Tennessee, and Wisconsin, show negligible contributions (0.00%), indicating minimal or no activity in these regions concerning oil and gas production. This highlights regions with potential for further exploration or investment, if feasible.
+
+4. **Regional Patterns**:
+States with significant oil and gas production, such as Texas and Louisiana, surprisingly contribute smaller percentages (0.21% and 0.19%, respectively). This could be due to missing data, outdated records, or differences in classification methods.
+
+5. **Strategic Opportunities**:
+Understanding why certain states like New Mexico and Wyoming perform exceptionally well could provide insights into replicating their success in other regions.
+
+For states with negligible revenue, it may be worth exploring whether geological limitations or untapped potential are the reasons behind their low contributions.
+
+These insights set the stage for deeper exploration of regional dynamics and the factors influencing revenue generation across states.
+
+
+## Revenue contribution by product
+
+Analyzing revenue contribution by product is a crucial step that provides insight into the financial impact of various oil and gas products. Here's what we accomplished:
+
+**Summing Revenue by Product**:
+
+ - It calculates the total revenue for each product using the SUM function.
+
+**Calculating Percentage Contribution**:
+
+ - For each product, it determines the proportion of its revenue relative to the total revenue across all products. This percentage is rounded to two decimal places for clarity.
+
+**Ranking Products**:
+
+ - Products are ranked in descending order based on their total revenue contribution, allowing us to easily identify the most and least profitable products.
+
+### Purpose of This Analysis:
+This step is designed to pinpoint which products generate the highest revenue and assess their relative contributions. It can help stakeholders:
+
+Identify the most lucrative products for prioritization and investment.
+
+Highlight underperforming products that may need further exploration, marketing, or adjustment.
+
+Establish a basis for strategic decisions around product development and diversification.
+
+
+**Top 20**
+| Product                        | Total Revenue       | Revenue Percentage |
+|--------------------------------|---------------------|---------------------|
+| Oil                            | 107105027347.40     | 42.84              |
+| N/A                            | 45312023813.90      | 18.13              |
+| Processed (Residue) Gas        | 30437821945.32      | 12.18              |
+| Unprocessed Gas                | 13772704673.83      | 5.51               |
+| Coal                           | 13372664601.40      | 5.35               |
+| Gas Plant Products             | 9227936083.03       | 3.69               |
+| Condensate                     | 8815085199.43       | 3.53               |
+| Sweet Crude                    | 6836386461.61       | 2.73               |
+| Unprocessed (Wet) Gas          | 5303754546.56       | 2.12               |
+| Coal Bed Methane               | 4782499602.05       | 1.91               |
+| Carbon Dioxide Gas (CO2)       | 938662086.51        | 0.38               |
+| Soda Ash                       | 544676996.59        | 0.22               |
+| Yellow Wax Crude               | 482859373.98        | 0.19               |
+| Pipeline Fuel/Loss             | 452139159.47        | 0.18               |
+| Condensate (bbl)               | 425982075.51        | 0.17               |
+| Black Wax Crude                | 293394600.00        | 0.12               |
+| Drip or Scrubber Condensate    | 205007848.92        | 0.08               |
+| Geothermal - Electrical Gen (lbs) | 166192919.46    | 0.07               |
+| Phosphate Raw Ore              | 160581936.82        | 0.06               |
+| Lead Concentrate               | 143896131.42        | 0.06               |
+
+
+### Insights
+**Dominance of Oil**:
+
+ - Oil contributes the highest revenue, accounting for 42.84% of the total. This underscores its critical importance as the primary driver of revenue.
+
+**Large Contribution of N/A**:
+
+ - Entries categorized as N/A make up 18.13% of revenue. This falls majorly under oil(pre-production) while others under Hardrock, Potassium, Geothermal, Coal, Phosphate, Wind and Not tied to a commodity.
+
+**Other Significant Contributors**:
+
+ - Processed (Residue) Gas (12.18%) and Unprocessed Gas (5.51%) are substantial contributors, alongside Coal (5.35%). These show the significance of diversified energy sources.
+
+**Prominent Secondary Products**:
+
+ - Products such as Gas Plant Products (3.69%) and Condensate (3.53%) reflect the importance of refining byproducts.
+
+**Focus Areas**:
+
+ - Lesser contributors like Carbon Dioxide Gas (0.38%) and Soda Ash (0.22%) might represent niche markets or specialized applications. They could be worth exploring for strategic opportunities.
+
+This analysis offers a strong view of product-level revenue distribution, helping stakeholders identify high-impact products and areas for diversification or further focus.
