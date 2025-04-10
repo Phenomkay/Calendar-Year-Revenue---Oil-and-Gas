@@ -73,6 +73,8 @@ Here, we examined the contribution of revenue by state to identify the key geogr
 
 This analysis provides stakeholders with a strategic view of state-level contributions to revenue, facilitating more informed geographic or policy decisions. Once the results are available, we can further interpret and present actionable insights.
 
+
+**Top 20**
 | State          | Total Revenue      | Revenue Percentage |
 |----------------|--------------------|---------------------|
 | N/A            | 158018986575.18   | 63.21              |
@@ -95,27 +97,6 @@ This analysis provides stakeholders with a strategic view of state-level contrib
 | Alabama        | 80101063.5        | 0.03               |
 | Mississippi    | 76270014.14       | 0.03               |
 | South Dakota   | 35071752.23       | 0.01               |
-| Michigan       | 31020736.94       | 0.01               |
-| Ohio           | 28774267.01       | 0.01               |
-| Kentucky       | 18619342.97       | 0.01               |
-| West Virginia  | 17963191.68       | 0.01               |
-| Washington     | 16171509.05       | 0.01               |
-| Florida        | 8994664.81        | 0.00               |
-| Oregon         | 8988725.29        | 0.00               |
-| Nebraska       | 6589150.4         | 0.00               |
-| Illinois       | 4396273.75        | 0.00               |
-| Virginia       | 4244343.74        | 0.00               |
-| Pennsylvania   | 2615249.06        | 0.00               |
-| Minnesota      | 2463711.98        | 0.00               |
-| Arizona        | 2082335.38        | 0.00               |
-| Indiana        | 494475.53         | 0.00               |
-| Maryland       | 320934.13         | 0.00               |
-| New York       | 237281.9          | 0.00               |
-| South Carolina | 60203.72          | 0.00               |
-| North Carolina | 5372.00           | 0.00               |
-| Wisconsin      | 2000.00           | 0.00               |
-| Tennessee      | 660.00            | 0.00               |
-| Georgia        | 218.00            | 0.00               |
 
 
 ### Key Insights
@@ -214,3 +195,135 @@ Establish a basis for strategic decisions around product development and diversi
  - Lesser contributors like Carbon Dioxide Gas (0.38%) and Soda Ash (0.22%) might represent niche markets or specialized applications. They could be worth exploring for strategic opportunities.
 
 This analysis offers a strong view of product-level revenue distribution, helping stakeholders identify high-impact products and areas for diversification or further focus.
+
+
+## Onshore vs. Offshore Revenue Analysis
+**Objective**: To evaluate the revenue distribution between onshore and offshore operations. This analysis aims to determine the financial contributions of each land category, providing insights into the relative importance of onshore and offshore activities.
+
+**Methodology**:
+ - **Data Aggregation**: We calculated the total revenue for each land category (Land_Category) using the SUM function.
+
+**Percentage Contribution**: 
+ - We determined the proportional revenue contribution of each category to the total revenue. This was calculated as a percentage and rounded to two decimal places for accuracy.
+
+**Sorting**: Land categories were ranked in descending order of total revenue to highlight the most significant contributors.
+
+**Purpose**:
+This analysis provides a clear comparison of the revenue generated from onshore and offshore activities. Insights gained can support stakeholders in:
+
+ - Assessing the economic significance of onshore vs. offshore operations.
+
+ - Identifying opportunities for resource optimization or investment.
+
+ - Understanding industry dynamics to guide strategic decisions.
+
+
+| Land Category       | Total Revenue       | Revenue Percentage |
+|---------------------|---------------------|---------------------|
+| Offshore            | 141417325261.20    | 56.57              |
+| Onshore             | 108449942938.60    | 43.38              |
+| Not Tied to a Lease | 125965533.49       | 0.05               |
+
+
+### Insights:
+**Offshore Dominance**:
+
+ - Offshore operations contribute the largest share of revenue at 56.57%, making them the most significant source of revenue generation. This suggests that offshore activities are highly productive or involve more lucrative resources.
+
+**Substantial Onshore Contribution**:
+
+ - Onshore operations account for 43.38% of the total revenue. While slightly lower than offshore, onshore still represents a significant portion, reflecting its critical role in the industry.
+
+**Minimal Impact of 'Not Tied to a Lease'**:
+
+ - The category "Not Tied to a Lease" contributes a negligible 0.05% of the total revenue. This indicates that such cases are rare or generate very low financial returns relative to onshore and offshore operations.
+
+**Strategic Implications**:
+
+ - The higher revenue from offshore operations could highlight their importance for investment and resource allocation.
+
+ - Onshore operations, with their near-equivalent share, remain crucial and could benefit from optimization to close the gap with offshore.
+
+ - Investigating the "Not Tied to a Lease" category may help clarify if it includes specific exceptions, anomalies, or overlooked opportunities.
+
+This analysis provides a clear overview of how revenue is distributed between land categories, helping stakeholders prioritize efforts in offshore and onshore activities.
+
+
+## Total Revenue Per Year: Analysis Plan
+**Objective**: To calculate the total revenue generated for each calendar year and identify trends or patterns in revenue distribution over time. This analysis provides a chronological perspective on financial performance.
+
+**Methodology**:
+ - **Grouping Data**: We grouped the data by Calendar_Year to aggregate revenue for each year.
+
+ - **Total Revenue Calculation**: Using the SUM function, the revenue for each year was calculated.
+
+ - **Formatting for Clarity**: The results were rounded to two decimal places for readability.
+
+ - **Ranking**: Years were sorted in descending order by total revenue to highlight the most financially impactful periods.
+
+**Purpose**:
+This analysis allows stakeholders to:
+
+ - Identify years with peak revenue performance.
+
+ - Understand trends in revenue growth or decline over time.
+
+ - Pinpoint specific years that may require deeper investigation due to outstanding or underwhelming results.
+
+
+| Calendar Year | Total Revenue       |
+|---------------|---------------------|
+| 2022          | 23909575936.92     |
+| 2008          | 23485404988.10     |
+| 2023          | 17289688735.16     |
+| 2014          | 13486237497.71     |
+| 2012          | 13482574507.47     |
+| 2013          | 13405177613.12     |
+| 2006          | 13012380921.01     |
+| 2007          | 11831299841.17     |
+| 2011          | 11674260303.09     |
+| 2021          | 11345943831.76     |
+| 2018          | 11093338080.88     |
+| 2010          | 10833934334.55     |
+| 2019          | 10642840813.41     |
+| 2005          | 10552746925.54     |
+| 2003          | 8694582697.08      |
+| 2004          | 8619528987.52      |
+| 2009          | 8235754310.17      |
+| 2015          | 8186319672.93      |
+| 2017          | 7657203562.62      |
+| 2020          | 6673483858.27      |
+| 2016          | 5880956314.81      |
+
+
+### Insights:
+**Top Revenue Years**:
+
+ - 2022 leads with the highest total revenue of 23.91 billion, closely followed by 2008 at 23.48 billion. These years may represent peak periods of activity or profitability in the oil and gas industry.
+
+**Strong Recent Performance**:
+
+ - 2023 ranks third, showing continued high revenue generation. This highlights sustained industry performance into recent years.
+
+**Middle Range Revenue Years**:
+
+ - Years like 2014, 2012, and 2013 cluster around the 13 billion range, suggesting steady growth or consistent revenue generation during that period.
+
+**Notable Historical Trends**:
+
+ - Years like 2006, 2007, and 2011 also show impressive revenue contributions, reflecting strong historical performance that may correlate with industry trends or external factors such as market demand.
+
+**Declining Revenue in Some Periods**:
+
+ - The data shows lower revenue in years such as 2020 (6.67 billion) and 2016 (5.88 billion), potentially due to global events like economic recessions or disruptions in oil and gas markets.
+
+**Strategic Implications**:
+
+ - Stakeholders should investigate what drove the exceptional performance in top years like 2022 and 2008, and explore whether similar conditions can be replicated.
+
+ - Understanding the declines in years such as 2020 may also help identify challenges to address in future strategic planning.
+
+This analysis provides a clear picture of revenue trends over time, helping stakeholders understand peak periods and areas for improvement.
+
+
+
