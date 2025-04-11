@@ -326,4 +326,136 @@ This analysis allows stakeholders to:
 This analysis provides a clear picture of revenue trends over time, helping stakeholders understand peak periods and areas for improvement.
 
 
+## Revenue by Revenue Type: Analysis Plan
+**Objective**: To analyze the revenue contributions of different Revenue Types, identifying which categories drive the most revenue and how they compare to each other.
 
+**Methodology**:
+ - **Data Aggregation**: The data is grouped by Revenue_Type to calculate the total revenue for each type.
+
+ - **Summing Revenue**: Using the SUM function, total revenue is calculated for every Revenue_Type.
+
+ - **Formatting**: Results are rounded to two decimal places for improved clarity.
+
+ - **Ranking Revenue Types**: The results are sorted in descending order to highlight the most significant contributors.
+
+### Purpose:
+This analysis will help stakeholders:
+
+ - Identify the most significant revenue types, offering insights into their financial impact.
+
+ - Highlight underperforming revenue types that could be addressed or further developed.
+
+ - Assess the diversity of revenue streams and explore opportunities for optimization or growth.
+
+
+
+| Revenue Type      | Total Revenue by Revenue Type |
+|-------------------|-------------------------------|
+| Royalties         | 204433853028.79              |
+| Bonus             | 37580704921.31              |
+| Rents             | 4794407670.87               |
+| Other revenues    | 2481649571.70               |
+| Inspection fees   | 581283806                   |
+| Civil penalties   | 121334734.63                |
+
+
+
+### Insights:
+**Royalties Lead the Way**:
+
+ - Royalties dominate the revenue categories, contributing a substantial 204.43 billion. This suggests that royalties are a critical driver of revenue, likely stemming from ongoing oil and gas production agreements or leases.
+
+**Bonus Contributions**:
+
+ - Bonus payments contribute 37.58 billion, ranking second. These may reflect initial payments made by companies to secure leases or rights, highlighting their strategic importance in revenue generation.
+
+**Smaller but Significant Contributions**:
+
+ - Rents (4.79 billion) and Other revenues (2.48 billion) provide smaller contributions but still play essential roles. Rents likely derive from ongoing lease agreements, while other revenues might encompass miscellaneous payments or fees.
+
+**Fees and Penalties**:
+
+ - Inspection fees (581 million) and Civil penalties (121 million) make up the smallest portions of revenue. While their financial impact is minimal, they represent vital regulatory or compliance-related income.
+
+### Strategic Implications:
+
+The overwhelming dominance of royalties highlights the importance of maintaining strong production agreements and monitoring lease compliance to sustain this revenue stream.
+
+Stakeholders might consider whether additional efforts to optimize revenue from smaller categories like rents or inspection fees could lead to incremental financial benefits.
+
+This analysis provides a clear picture of the revenue structure by type, giving stakeholders insights into areas of strength and opportunities for further growth or optimization.
+
+
+## Total Revenue by Commodity: Analysis Plan
+**Objective**: To evaluate the revenue contributions of different commodities, highlighting the financial impact of each and identifying key drivers in the dataset.
+
+**Methodology**:
+ - **Grouping Data**: We grouped the data by Commodity to aggregate revenue for each commodity.
+
+ - **Calculating Total Revenue**: Using the SUM function, the total revenue was calculated for each commodity.
+
+ - **Ranking Commodities**: Commodities were sorted in descending order of total revenue contribution to emphasize the most impactful ones.
+
+ - **Formatting for Clarity**: Results were rounded to two decimal places for improved readability.
+
+**Purpose**:
+This analysis enables stakeholders to:
+
+ - Identify the most profitable commodities, helping prioritize production and investment efforts.
+
+ - Highlight lower-contributing commodities for potential optimization or further exploration.
+
+ - Understand the revenue structure and assess opportunities for diversification.
+
+
+| Commodity                | Total Revenue by Commodity |
+|--------------------------|----------------------------|
+| Oil                      | 124446621720.90           |
+| Gas                      | 54875004291.70            |
+| Oil & gas (pre-production) | 33488377391.77          |
+| Coal                     | 18481354089.61           |
+| Natural gas liquids      | 9227936083.03            |
+| Wind                     | 5745810048.61            |
+| Carbon dioxide           | 938662086.51             |
+| Not tied to a commodity  | 707249089.52             |
+| Soda ash                 | 520359801.97             |
+| Geothermal               | 414723066.07             |
+| Potassium                | 311126128.03             |
+| Sodium                   | 182101693.48             |
+| Phosphate                | 168176827.42             |
+| Copper                   | 159474634.02             |
+| Lead                     | 141665430.07             |
+| Sand & gravel            | 56408843.50              |
+| Gilsonite                | 32402336.18              |
+| Zinc                     | 29369229.59              |
+| Sulfur                   | 26336111.33              |
+| Helium                   | 15808298.56              |
+
+
+
+### Insights:
+**Oil as the Revenue Leader**:
+
+ - Oil is by far the largest revenue generator at 124.45 billion, highlighting its critical role as the most valuable commodity.
+
+**Gas and Pre-Production Oil & Gas**:
+
+ - Gas contributes a significant 54.88 billion, followed by Oil & Gas (pre-production) at 33.49 billion, demonstrating their importance in sustaining revenue streams.
+
+**Coal's Strong Impact**:
+
+ - With 18.48 billion, Coal represents a noteworthy portion of total revenue, showcasing its enduring relevance as a commodity.
+
+**Natural Gas Liquids and Renewable Energy**:
+
+ - Natural gas liquids (9.23 billion) and Wind (5.75 billion) reflect the growing diversity in energy sources, with renewables making a notable contribution.
+
+**Smaller Commodities with Niche Roles**:
+
+ - Commodities like Carbon dioxide (938.66 million), Soda ash (520.36 million), and Geothermal (414.72 million) provide smaller but specialized revenue streams.
+
+**Opportunities for Growth**:
+
+ - Lower-revenue commodities such as Zinc, Sulfur, and Helium could represent niche markets or areas for potential exploration and development.
+
+This analysis highlights the dominance of traditional energy sources like oil and gas, while also pointing to the diversification of revenue through renewables and specialized commodities.
