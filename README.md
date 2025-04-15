@@ -459,3 +459,192 @@ This analysis enables stakeholders to:
  - Lower-revenue commodities such as Zinc, Sulfur, and Helium could represent niche markets or areas for potential exploration and development.
 
 This analysis highlights the dominance of traditional energy sources like oil and gas, while also pointing to the diversification of revenue through renewables and specialized commodities.
+
+
+## Total Revenue by Land Class: Analysis Plan
+**Objective**: To evaluate the revenue distribution across different land classes, identifying their financial contributions and relative importance within the dataset.
+
+**Methodology**:
+ - **Data Aggregation**: The data is grouped by Land_Class to calculate the total revenue associated with each land class.
+
+ - **Revenue Summation**: Using the SUM function, the total revenue is computed for each category.
+
+ - **Sorting**: Land classes are ranked in descending order by total revenue contributions, emphasizing the most financially impactful ones.
+
+ - **Formatting**: Values are rounded to two decimal places for clarity.
+
+**Purpose**:
+This analysis helps stakeholders:
+
+ - Determine the most profitable land classes, enabling better resource allocation and operational focus.
+
+ - Identify underperforming land classes to explore optimization opportunities or alternative uses.
+
+ - Understand revenue patterns across diverse land categories to guide strategic decisions.
+
+
+| Land Class       | Total Revenue by Land Class |
+|------------------|-----------------------------|
+| Federal          | 233517511181.55            |
+| Native American  | 16475722551.73             |
+
+
+### Insights:
+**Federal Land Dominates Revenue**:
+
+ - Revenue from Federal lands is significantly higher at 233.52 billion, accounting for the vast majority of total revenue. This highlights the critical role of federal lands in driving financial performance, likely due to extensive oil and gas activities on federally managed properties.
+
+**Contribution from Native American Lands**:
+
+ - Native American lands contribute 16.48 billion, reflecting a notable but smaller share of total revenue. This emphasizes the importance of these lands in supporting revenue streams while also highlighting their specific, unique management and leasing processes.
+
+**Strategic Implications**:
+
+ - The overwhelming revenue from Federal lands suggests that stakeholders should prioritize compliance, sustainability, and resource management to maintain and enhance revenue generation from these areas.
+
+ - Native American lands, while contributing a smaller share, could represent opportunities for further investment or development in a way that respects cultural and legal considerations.
+
+This concise analysis offers a clear understanding of how land class impacts revenue, providing a foundation for strategic decision-making.
+
+
+
+## Top 10 Counties by Total Revenue: Analysis Plan
+**Objective**: To identify the top 10 counties with the highest total revenue, offering insights into the regional distribution of financial contributions.
+
+**Methodology**:
+ - **Grouping Data**: Revenue is grouped by County to aggregate the total earnings for each.
+
+ - **Summing Revenue**: Using the SUM function, total revenue is calculated for every county.
+
+ - **Ranking and Selection**: Counties are sorted in descending order of total revenue, and the top 10 counties are selected.
+
+ - **Formatting**: Revenue figures are rounded to two decimal places to enhance clarity.
+
+**Purpose**:
+This analysis enables stakeholders to:
+
+ - Pinpoint high-performing counties that generate substantial revenue.
+
+ - Understand regional dynamics, such as clusters of financial activity.
+
+ - Assess opportunities for growth or investment in top-performing areas.
+
+
+
+| County      | Total Revenue       |
+|-------------|---------------------|
+| N/A         | 158018986575.18    |
+| Campbell    | 15174900392.36     |
+| Eddy        | 13815409962.36     |
+| Lea         | 13208785645.62     |
+| Sublette    | 8282276727.22      |
+| San Juan    | 4741480593.29      |
+| Rio Arriba  | 3031371738.49      |
+| Converse    | 2677798879.56      |
+| Sweetwater  | 2580285304.32      |
+| Uintah      | 2448590968.63      |
+
+
+
+### Insights:
+**Significant Revenue Contribution from 'N/A'**:
+
+ - The N/A category contributes the largest portion of revenue at 158.02 billion, indicating a significant amount of revenue not tied to a specific county. This represent offshore revenue that needs further exploration.
+
+**Top-Performing Counties**:
+
+ - Campbell County leads with 15.17 billion, closely followed by Eddy County (13.82 billion) and Lea County (13.21 billion). These counties are evidently vital hubs for revenue generation, possibly driven by extensive resource extraction activities.
+
+**Middle Revenue Contributors**:
+
+ - Sublette County ranks fourth with 8.28 billion, followed by San Juan County (4.74 billion) and Rio Arriba County (3.03 billion), showcasing their importance in supporting overall revenue.
+
+**Smaller but Notable Contributions**:
+
+ - Counties like Converse, Sweetwater, and Uintah contribute between 2.44 billion and 2.67 billion, still representing meaningful financial impact, though on a smaller scale compared to the top performers.
+
+**Strategic Considerations**:
+
+ - Understanding why certain counties like Campbell and Eddy dominate revenue generation can offer insights into resource availability, operational efficiency, or policy impacts.
+
+ - Investigating the N/A classification may help identify potential data gaps or opportunities for better categorization.
+
+This analysis highlights the key revenue-generating counties, providing a focused view of regional contributions.
+
+
+## Year-over-Year Growth Rate: Analysis Plan
+
+**Objective**: To calculate the Year-over-Year (YoY) growth rate in revenue, providing insights into annual financial performance trends.
+
+**Methodology**:
+
+ - **Data Alignment**: Revenue for each year is paired with the prior year's data using a self-join on the calendar_year_rev table.
+
+ - **Summing Revenue**: Total revenue is aggregated for each year using the SUM function.
+
+ - **Growth Rate Calculation**: The YoY growth percentage is computed as:
+
+YoY Growth (%) = [(Current Year Revenue − Previous Year Revenue)/Previous Year Revenue] * 100
+
+ - **Error Handling**: Division by zero is avoided with the NULLIF function when the previous year's revenue is zero.
+
+ - **Sorting and Grouping**: Results are grouped by year and presented in chronological order.
+
+**Purpose**: This analysis enables stakeholders to:
+
+ - Track yearly revenue trends and identify growth patterns.
+
+ - Highlight periods of significant revenue increase or decrease.
+
+ - Inform strategic decisions based on revenue performance insights.
+
+
+| Calendar Year | Total Revenue       | YoY Growth Percentage |
+|---------------|---------------------|------------------------|
+| 2003          | 8694582697.08      | NULL                   |
+| 2004          | 18816431779755.6   | -1.76                 |
+| 2005          | 23247701477036.8   | 24.58                 |
+| 2006          | 28171804694000.2   | 14.38                 |
+| 2007          | 27614253829242.2   | -11.54                |
+| 2008          | 56341486566316.3   | 97.84                 |
+| 2009          | 19823460624588.1   | -64.1                 |
+| 2010          | 25470579620571.5   | 31.44                 |
+| 2011          | 27469534493106.9   | 7.3                   |
+| 2012          | 31859323561149.1   | 17.33                 |
+| 2013          | 31180443128246.4   | -0.45                |
+| 2014          | 31328529707175.5   | -2.83                |
+| 2015          | 19688098813425.7   | -38.64               |
+| 2016          | 13990795072918.9   | -26.65               |
+| 2017          | 17841284300891.3   | 32.02                 |
+| 2018          | 25492490909842     | 41.79                 |
+| 2019          | 24989390229843.2   | -4.26                |
+| 2020          | 15702707518495.6   | -36.27               |
+| 2021          | 26265859970599     | 78.98                 |
+| 2022          | 52577157485457.4   | 113.25                |
+| 2023          | 37570493621417.6   | -28.77               |
+
+
+### Insights:
+**Exceptional Growth in 2022**:
+
+ - 2022 stands out with the highest Year-on-Year (YoY) growth rate of 113.25% and a total revenue of 52.58 billion, representing a period of remarkable financial success. This growth warrants further exploration to identify driving factors like market conditions, operational advancements, or policy changes.
+
+**Unstable Growth Patterns**:
+
+ - Several years experienced significant declines, such as 2009 (-64.1%), 2015 (-38.64%), 2020 (-36.27%), and 2023 (-28.77%). These drops could correlate with global events, market recessions, or reduced operational output, and further investigation might uncover strategies to mitigate future risks.
+
+**Years of Consistent Growth**:
+
+ - Years like 2005 (24.58%), 2006 (14.38%), and 2018 (41.79%) reflect strong growth, suggesting periods of stability and successful initiatives that could serve as benchmarks for future strategies.
+
+**Revenue Peaks**:
+
+ - Revenue peaked in 2008 with 56.34 billion, showcasing extraordinary financial results and the highest single-year performance. Similar patterns appear in 2022, reinforcing their importance as standout years.
+
+### Strategic Implications:
+
+ - Investigating years with sharp declines (e.g., 2009 and 2020) could highlight vulnerabilities in external factors or operational efficiency.
+
+ - Analyzing drivers behind the growth in years like 2008, 2018, and 2022 might offer replicable strategies for sustained revenue performance.
+
+This analysis highlights both growth opportunities and challenges across the years, providing a comprehensive view of revenue dynamics.
