@@ -648,3 +648,293 @@ YoY Growth (%) = [(Current Year Revenue − Previous Year Revenue)/Previou
  - Analyzing drivers behind the growth in years like 2008, 2018, and 2022 might offer replicable strategies for sustained revenue performance.
 
 This analysis highlights both growth opportunities and challenges across the years, providing a comprehensive view of revenue dynamics.
+
+
+## Pareto Analysis (80/20 Rule): Identifying Key Revenue Contributors
+
+**Objective**:
+ - The Pareto Principle, also known as the 80/20 Rule, asserts that a majority (80%) of outcomes are often driven by a minority (20%) of inputs. Applied to revenue analysis, this principle helps identify the top contributors—whether commodities, states, or other factors—driving the bulk of the revenue. This analysis aims to uncover and emphasize those key contributors that have the most significant impact on overall financial performance.
+
+
+## Pareto Analysis for Commodities
+
+**Objective**: To implement the Pareto Principle for commodities, analyzing their revenue contribution and categorizing them into two groups:
+
+ - Top 20%: Commodities responsible for 80% of the revenue.
+
+ - Remaining 80%: Commodities that account for the other 20%.
+
+**Methodology**:
+**Revenue Aggregation**:
+
+ - Using a Common Table Expression (CTE), revenue data is grouped by Commodity to calculate the total revenue for each.
+
+**Ranking and Percentage Calculation**:
+
+ - Commodities are ranked in descending order of total revenue.
+
+ - The revenue contribution percentage of each commodity is computed relative to the overall revenue.
+
+ - Cumulative percentages are calculated to track the point at which 80% of the total revenue is accumulated.
+
+**Categorization**:
+
+ - Each commodity is classified into Top 20% or Remaining 80%, based on whether its cumulative percentage falls within or beyond the 80% threshold.
+
+
+### Purpose:
+This analysis seeks to:
+
+ - Highlight the key revenue drivers among commodities.
+
+ - Provide clarity on revenue distribution to support focused investment and operational strategies.
+
+ - Offer insights into how well the dataset aligns with the 80/20 rule, aiding in understanding financial concentration.
+
+### Top 10
+| Commodity                   | Total Revenue      | Revenue Percentage | Cumulative Percentage | Pareto Category |
+|-----------------------------|--------------------|---------------------|-----------------------|-----------------|
+| Oil                         | 124446621720.90   | 49.78              | 49.78                | Top 20%         |
+| Gas                         | 54875004291.70    | 21.95              | 71.73                | Top 20%         |
+| Oil & gas (pre-production)  | 33488377391.77    | 13.40              | 85.13                | Remaining 80%   |
+| Coal                        | 18481354089.61    | 7.39               | 92.52                | Remaining 80%   |
+| Natural gas liquids         | 9227936083.03     | 3.69               | 96.21                | Remaining 80%   |
+| Wind                        | 5745810048.61     | 2.30               | 98.51                | Remaining 80%   |
+| Carbon dioxide              | 938662086.51      | 0.38               | 98.88                | Remaining 80%   |
+| Not tied to a commodity     | 707249089.52      | 0.28               | 99.17                | Remaining 80%   |
+| Soda ash                    | 520359801.97      | 0.21               | 99.38                | Remaining 80%   |
+| Geothermal                  | 414723066.07      | 0.17               | 99.54                | Remaining 80%   |
+
+
+### Insights:
+**Key Revenue Drivers (Top 20%)**:
+
+ - The Top 20% of commodities include Oil and Gas, which together contribute 71.73% of the total revenue. Oil alone accounts for 49.78%, underscoring its dominance as the most significant revenue-generating commodity.
+
+**Remaining 80% Contributions**:
+
+ - Commodities in the Remaining 80% category contribute the other 28.27% of revenue. This includes pre-production Oil & Gas (13.40%), Coal (7.39%), and other smaller contributors such as Natural Gas Liquids and Wind.
+
+**Revenue Concentration**:
+
+ - The application of the Pareto Principle shows a strong alignment, with the majority of revenue being driven by a minority of commodities. This highlights the industry’s reliance on a few key resources.
+
+**Strategic Focus**:
+
+ - Efforts should prioritize maximizing production and efficiency for Oil and Gas, as they represent the most impactful commodities.
+
+ - For commodities in the Remaining 80%, there may be opportunities for diversification, optimization, or exploring niche markets (e.g., Wind or Carbon Dioxide).
+
+**Opportunities for Growth**:
+
+ - While Oil and Gas dominate, commodities like Coal, Natural Gas Liquids, and Wind show significant contributions that could be further developed or expanded to reduce dependency on the Top 20%.
+
+This Pareto Analysis provides clear guidance on which commodities to focus on for sustaining revenue growth while exploring new opportunities for diversification.
+
+
+## Pareto Analysis for States
+
+**Objective**: To apply the Pareto Principle to states by analyzing their revenue contributions. This analysis divides states into:
+
+ - Top 20%: States generating 80% of the revenue.
+
+ - Remaining 80%: States accounting for the remaining 20%.
+
+**Methodology**:
+**Revenue Aggregation**:
+
+ - Using a Common Table Expression (CTE), revenue data is grouped by State to compute the total revenue for each.
+
+**Ranking and Percentage Calculation**:
+
+ - States are ranked in descending order of total revenue.
+
+ - The revenue contribution percentage of each state is calculated relative to the overall total revenue.
+
+ - Cumulative percentages are determined to identify the point where the Top 20% states collectively contribute 80% of the revenue.
+
+**Categorization**:
+
+ - States are classified into Top 20% or Remaining 80% based on their cumulative revenue percentage.
+
+### Purpose:
+This analysis seeks to:
+
+ - Identify the states driving the majority of revenue.
+
+ - Assess revenue concentration to inform resource allocation, policy decisions, and investment strategies.
+
+ - Explore the distribution of revenue across states, offering insights into areas with high financial impact and opportunities for growth.
+
+
+### Top 10
+| State        | Total Revenue       | Revenue Percentage | Cumulative Percentage | Pareto Category |
+|--------------|---------------------|---------------------|-----------------------|-----------------|
+| N/A          | 158018986575.18    | 63.21              | 63.21                | Top 20%         |
+| New Mexico   | 35175637979.20     | 14.07              | 77.28                | Top 20%         |
+| Wyoming      | 34667303719.14     | 13.87              | 91.15                | Remaining 80%   |
+| Colorado     | 5712043519.93      | 2.28               | 93.43                | Remaining 80%   |
+| Utah         | 4735421749.09      | 1.89               | 95.33                | Remaining 80%   |
+| North Dakota | 4175200562.05      | 1.67               | 97.00                | Remaining 80%   |
+| California   | 2422162439.95      | 0.97               | 97.97                | Remaining 80%   |
+| Montana      | 1505688789.18      | 0.60               | 98.57                | Remaining 80%   |
+| Alaska       | 917168821.82       | 0.37               | 98.93                | Remaining 80%   |
+| Texas        | 536596192.43       | 0.21               | 99.15                | Remaining 80%   |
+
+
+
+### Insights:
+**Key Revenue Drivers (Top 20%)**:
+
+ - The Top 20% of states include N/A (unclassified or offshore revenue) and New Mexico, which collectively contribute 77.28% of total revenue. N/A alone accounts for 63.21%, while New Mexico adds another 14.07%.
+
+**Remaining 80% Contributions**:
+
+ - States classified in the Remaining 80% contribute the remaining 22.72% of revenue. Wyoming, although not in the Top 20%, shows significant contribution (13.87%), making it an essential player.
+
+**Revenue Concentration**:
+
+ - This analysis confirms the Pareto Principle: a minority of states account for the majority of revenue. This concentration indicates the need to prioritize resources and investments in the highest-performing areas.
+
+**Strategic Focus**:
+
+ - Prioritizing operations in states like New Mexico, Wyoming, and unclassified regions (N/A) may yield the most significant returns.
+
+ - Investigating underperforming states (e.g., those contributing 0.01% or less) may uncover hidden opportunities or inefficiencies.
+
+**Opportunities for Growth**:
+
+ - While states in the Remaining 80% individually contribute less, regions like Colorado, Utah, and North Dakota still provide meaningful revenue. Exploring these areas further may help reduce dependency on top contributors.
+
+This analysis provides actionable insights on state-level revenue distribution and highlights opportunities for optimization.
+
+
+## Moving Average Forecasting
+
+**Objective**: Moving Average Forecasting is a method used to smooth out fluctuations in data over time and identify trends. This analysis calculates the 3-year moving average for total revenue, offering insights into the historical patterns and future projections.
+
+**Methodology**:
+**Data Aggregation**:
+
+ - Revenue is aggregated by Calendar_Year using a Common Table Expression (CTE).
+
+**Calculating the Moving Average**:
+
+ - A 3-year moving average is calculated using a window function (AVG) applied over the revenue history, with a sliding window of three rows (two preceding years and the current year).
+
+### Purpose:
+This analysis provides:
+
+ - A clearer view of revenue trends, removing the impact of short-term fluctuations.
+
+ - Insights into future projections based on historical patterns.
+
+ - Data to support strategic decision-making by focusing on longer-term performance indicators.
+
+
+| Calendar Year | Total Revenue       | Moving Average       |
+|---------------|---------------------|----------------------|
+| 2003          | 8694582697.08      | 8694582697.08       |
+| 2004          | 8619528987.52      | 8657055842.30       |
+| 2005          | 10552746925.54     | 9288952870.05       |
+| 2006          | 13012380921.01     | 10728218944.69      |
+| 2007          | 11831299841.17     | 11798809229.24      |
+| 2008          | 23485404988.10     | 16109695250.09      |
+| 2009          | 8235754310.17      | 14517486379.81      |
+| 2010          | 10833934334.55     | 14185031210.94      |
+| 2011          | 11674260303.09     | 10247982982.60      |
+| 2012          | 13482574507.47     | 11996923048.37      |
+| 2013          | 13405177613.12     | 12854004141.23      |
+| 2014          | 13486237497.71     | 13457996539.43      |
+| 2015          | 8186319672.93      | 11692578261.25      |
+| 2016          | 5880956314.81      | 9184504495.15       |
+| 2017          | 7657203562.62      | 7241493183.45       |
+| 2018          | 11093338080.88     | 8210499319.44       |
+| 2019          | 10642840813.41     | 9797794152.30       |
+| 2020          | 6673483858.27      | 9469887584.19       |
+| 2021          | 11345943831.76     | 9554089501.15       |
+| 2022          | 23909575936.92     | 13976334542.32      |
+| 2023          | 17289688735.16     | 17515069501.28      |
+
+
+
+### Insights:
+**Revenue Stability**:
+
+ - The moving average smooths out fluctuations, providing a clearer view of revenue trends. For example, from 2013 to 2014, the moving average consistently reflects stable revenue near the 13 billion mark, showing a period of steady growth.
+
+**Sharp Revenue Peaks**:
+
+ - 2022 exhibits a sharp peak in both total revenue (23.91 billion) and moving average (13.98 billion). This suggests a significant uptick that may correlate with external factors or successful industry initiatives.
+
+**Post-Peak Growth**:
+
+ - The moving average continues to rise in 2023, reaching 17.51 billion, reflecting the lingering effects of the revenue surge in 2022.
+
+**Periods of Decline**:
+
+ - During years like 2015 to 2017, the moving average shows a downward trend from 11.69 billion to 7.24 billion, indicating a sustained dip in financial performance. This period warrants investigation to uncover potential challenges.
+
+**Strategic Applications**:
+
+ - The moving average highlights years of strong performance (e.g., 2008, 2022) and years of decline (e.g., 2015–2017). These insights help in identifying successful strategies or mitigating factors for underperforming periods.
+
+This analysis presents a comprehensive view of revenue trends over time, smoothing out annual fluctuations and highlighting strategic opportunities.
+
+
+## Linear Trend Analysis
+
+**Objective**: The Linear Trend Analysis seeks to determine the relationship between revenue and time and to forecast future revenue based on this trend. By calculating a linear regression line, we derive a slope and intercept to predict revenue for the next year.
+
+**Methodology**:
+**Revenue Aggregation**:
+
+ - Revenue data is grouped by Calendar_Year, calculating the total revenue for each year using a Common Table Expression (CTE).
+
+**Indexing Years**:
+
+ - A new column Year_Index is created to assign a sequential number to each year, enabling numerical operations for linear trend calculation.
+
+**Trend Coefficients**:
+
+ - Using statistical formulas for linear regression, the slope (m) and intercept (b) of the trend line are calculated:
+
+ -- Slope (m): Represents the rate of change in revenue over years.
+
+ -- Intercept (b): Reflects the predicted revenue when the year index is zero.
+
+**Forecasting**:
+
+ - The next year is predicted by applying the linear trend formula:
+
+## Purpose:
+This analysis aims to:
+
+ - Understand the historical trends in revenue over time.
+
+ - Provide a forecast for the next year's revenue based on a linear trend.
+
+ - Support stakeholders in strategic planning and decision-making.
+
+
+| Predicted Year | Predicted Revenue  |
+|----------------|--------------------|
+| 2024           | 13222987340.35    |
+
+
+### Insights:
+**Predicted Revenue for 2024**:
+
+ - Based on the linear trend analysis, the predicted revenue for 2024 is approximately 13.22 billion. This forecast reflects the historical trends and provides a data-driven estimate of financial performance.
+
+**Trend Implications**:
+
+ - The predicted revenue shows a decline compared to the peak years like 2022 and 2023. This suggests a potential leveling or slight reduction in revenue growth over time.
+
+**Strategic Planning**:
+
+ - The trend can guide stakeholders in preparing for the predicted revenue levels. This might involve focusing on cost optimization, diversifying revenue streams, or increasing efficiency to maximize profitability.
+
+**Comparison with Moving Average**:
+
+ - The moving average for recent years suggests slightly higher revenue trends than this linear forecast. Comparing these models can help refine forecasts by accounting for different perspectives on historical data.
