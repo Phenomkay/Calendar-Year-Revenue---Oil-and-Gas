@@ -1,3 +1,27 @@
+
+
+# Calendar Year Revenue Analysis for Oil and Gas
+
+## Project Overview
+This project presents a comprehensive calendar year revenue analysis for the oil and gas sector, leveraging SQL for data processing and in-depth analytical insights. The analysis focuses on understanding historical revenue trends, identifying key performance drivers across various dimensions (states, products, revenue types, commodities, land classes, and counties), and forecasting future revenue. The aim is to transform raw financial data into actionable intelligence, supporting strategic decision-making and optimizing business operations within the industry.
+
+## Problem Statement
+The oil and gas industry often grapples with fluctuating market dynamics, complex revenue streams, and the need for data-driven insights to maintain profitability and ensure sustainable growth. Without a clear understanding of historical performance, key revenue contributors, and future projections, stakeholders face challenges in optimizing resource allocation, identifying diversification opportunities, and making informed strategic decisions, leading to potential revenue loss or missed growth opportunities.
+
+## Project Objective
+The primary objectives of this project are to:
+
+* **Enhance Data Clarity and Reliability:** Implement robust data preprocessing techniques (e.g., handling NULL values, removing irrelevant columns) to ensure clean, accurate, and interpretable revenue datasets.
+
+* **Identify Key Revenue Drivers:** Analyze revenue contributions across diverse dimensions such as states, products, revenue types, commodities, land classes, and counties to pinpoint major financial contributors and areas for strategic focus.
+
+* **Uncover Historical Trends and Patterns:** Calculate total and average annual revenues, analyze year-over-year growth rates, and assess revenue distribution to understand past performance and identify significant trends.
+
+* **Provide Future Revenue Projections:** Develop forecasting models (e.g., 3-year moving average, linear trend analysis) to predict future revenue, thereby aiding in proactive strategic planning, cost optimization, and risk mitigation.
+
+* **Support Informed Decision-Making:** Deliver actionable insights that empower stakeholders to optimize resource allocation, identify growth and diversification opportunities, and make data-driven decisions to enhance overall financial performance in the oil and gas sector.
+
+## Analysis
 First, we observed that certain columns in our dataset had NULL values, which were expected based on the nature of the data (e.g., onshore revenue fields being empty for offshore records and vice versa). To make the dataset cleaner and more interpretable, we replaced all these NULL values with "N/A" using the COALESCE function. This ensured that the data remains clear without any ambiguous blanks.
 We applied this update to several columns, including:
 
